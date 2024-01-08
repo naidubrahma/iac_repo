@@ -18,3 +18,7 @@ variable "VPC_name" {
   default = "VPC_saneks"
   
 }
+
+variable "profile" {
+    description = "AWS credentials profile"
+}
