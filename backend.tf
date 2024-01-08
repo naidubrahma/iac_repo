@@ -1,5 +1,5 @@
 /*resource "aws_s3_bucket" "example" {
-  bucket = "san-bucket63838146"
+  bucket = "san-bucket-john"
 
   tags = {
     Name        = "My bucket"
