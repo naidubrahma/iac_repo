@@ -1,11 +1,11 @@
 provider "aws" {
   region = "us-west-2"
-  access_key = "AKIA35ZMCEMN3XDHXGET"
-  secret_key = "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"
+  access_key = "AKIAQJILBYSSYJRCTTOF"
+  secret_key = "h5EpkCejNKUovvSMNxNJ9uLq35cBoM/WxYJN5xMv"
 }
 /*
 resource "aws_s3_bucket" "example" {
-  bucket = "san-bucket63838146"
+  bucket = "san-bucket-john"
 
   tags = {
     Name        = "My bucket"
@@ -14,7 +14,7 @@ resource "aws_s3_bucket" "example" {
 }
 
 resource "aws_dynamodb_table" "example_1" {
-  name         = "san-table"
+  name         = "san-table-john"
   hash_key     = "LockID"
   billing_mode = "PAY_PER_REQUEST"
 
@@ -27,7 +27,7 @@ resource "aws_dynamodb_table" "example_1" {
 terraform {
   backend "s3" {
     bucket         = "san-bucket63838146"
-    dynamodb_table = "san-table"
+    dynamodb_table = "san-table-john"
     key            = "global/mystatefile/terraform.tfstate"
     region         = "us-west-2"
     encrypt        = true
