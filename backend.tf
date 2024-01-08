@@ -7,7 +7,7 @@
   }
 }
 resource "aws_dynamodb_table" "example_1" {
-  name             = "san-table"
+  name             = "san-table-john"
   hash_key         = "LockID"
   billing_mode     = "PAY_PER_REQUEST"
 
