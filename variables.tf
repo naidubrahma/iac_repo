@@ -19,6 +19,3 @@ variable "VPC_name" {
   
 }
 
-variable "profile" {
-    description = "AWS credentials profile"
-}
